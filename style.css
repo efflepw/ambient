@@ -1,0 +1,51 @@
+:root {
+  --bg-color: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: var(--bg-color);
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#container {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#wrapper {
+  position: relative;
+
+  width: 600px;
+  height: 400px;
+
+  box-shadow: inset 0 0 4rem 4rem var(--bg-color);
+}
+
+#canvas {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+#image {
+  width: 400px;
+  height: 220px;
+
+  position: absolute;
+
+  top: 90px;
+  left: 100px;
+}
